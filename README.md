@@ -13,24 +13,28 @@ This lab builds on the completed installation from the [osTicket: Prerequisites 
 
 <h2>🖥️ Environments and Technologies Used</h2>
 
+Gain hands‑on experience with:
+
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
 - Windows 11 (4 vCPUs)
 - osTicket v1.15.8
+- Web Browser (Admin Panel & Agent Panel)
+- Gemini Ai
 
 
 <h2>🎯 Purpose</h2>
 
 Gain hands‑on experience with:
-- Azure VM deployment
-- IIS and PHP configuration
-- Database setup and integration
-- osTicket installation and initial configuration
+- Ticket creation and escalation
+- SLA management
+- Department visibility and permissions
+- Agent vs. Admin workflows
+- Real‑world help desk ticket intake and resolution
 
-<h2>Installation Steps</h2>
+<h2>Lifecycle Steps</h2>
 
-Step 1: Create Azure VM
+Step 1: Access osTicket
 
 Creating a Windows Virtual Machine through an Azure Subscription. 
 - Name: osticket-vm
