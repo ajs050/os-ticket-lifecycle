@@ -4,9 +4,11 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This repository documents the setup and configuration of osTicket, an open‑source help desk system, deployed on an Azure Virtual Machine.
-It focuses on installation, environment setup, and system configuration.<br />
+<h1>osTicket - Ticket Lifecycle Examples</h1>
+This repository demonstrates the ticket lifecycle inside osTicket. From creation to assignment, escalation, and resolution.
+It simulates real help desk workflows and shows how IT support teams manage SLAs, departments, permissions, and user interactions.
+
+This lab builds on the completed installation from the [osTicket: Prerequisites and Installation](https://github.com/ajs050/os-ticket-config) repository.<br />
 
 
 <h2>🖥️ Environments and Technologies Used</h2>
