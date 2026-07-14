@@ -36,45 +36,39 @@ Gain hands‑on experience with:
 
 Step 1: Access osTicket
 
-Creating a Windows Virtual Machine through an Azure Subscription. 
-- Name: osticket-vm
-- OS: Windows 11
-- Credentials: labuser / osTicketPassword1! (for lab use only)
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/5b382ca4-a27e-4a89-a700-25996200e2d3" />
+Using both website pages to understand the difference between an Admin and a SysAdmin Login Page.  
+- Admin/Analyst Login Page: http://localhost/osTicket/scp/login.php
+- End‑User Portal:  http://localhost/osTicket
+- Agent Panel → Actual Help desk workers
+- Admin Panel → System configuration, roles, SLAs, departments
+
+  
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/0bcef52d-f4b2-4b1c-bddb-c9fbf3ce2ec8" />
+
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/b9ca9a87-c37c-4011-aeed-222486cc5bf5" />
 
 
 <br />
 <br />
 
-Step 2: Install Requirements
+Step 2: Configure Roles
 
-We will first enable IIS with CGI through the Windows Control Panel. Then, after extracting the ZIP folder available on the OS's website, we will install the following items. 
+Configuring a role of "Supreme Admin" that will have all permissions. 
 
-- PHP Manager
-- Rewrite Module
-- VC Redistributable
-- MySQL. Launch Standard Configuration, and create credentials for the database  
+- Admin Panel → Agents → Roles
+- Create new role: Supreme Admin. Enable all permissions
+- Roles determine what agents can see and modify.
 
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/0dcd30df-363b-4fe1-bd68-96d336468de6" />
 
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/3f8068bf-c86e-4c7c-8f9a-8af9d261fc7f" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/e412b0a8-120b-4528-bc7b-f53d3df611a2" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/c6742f4e-7dfe-41df-8846-9e02cde66fd1" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/159162a1-c57d-4e98-9685-af234a3ba754" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/138c1e87-586b-4cd8-9f77-9aa081a6c249" />
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/acc25c4b-db6c-4761-bc98-b1259594e633" />
 
 <br />
 <br />
 
 
-Step 3: Configure PHP and IIS
+Step 3: Configure Departments
 
-
-We will create a PHP Folder (C:\PHP) in Windows (C:) and unzip the PHP 7.3.8 files into this folder. Afterwards: 
+Adding a  
 
 - Open IIS as Administrator.
 - Register PHP in IIS via PHP Manager → C:\PHP\php‑cgi.exe.
