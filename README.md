@@ -119,7 +119,7 @@ Creating our actual Help Desk Workers involved in this simulation.
 - Admin Panel → Agents → Add New
 - Agents represent internal IT staff.
 - Jane: SysAdmins	department, Supreme Admin Role, Online Banking Team
-- John: Support department, View Only
+- John: Support department, All Access
   
 <img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/f8383fe6-5db8-4ea2-b01b-a86b7a33a0e2" />
 
@@ -173,3 +173,80 @@ Creating Help Desk Topics that categorize the incoming tickets.
 
 <br />
 <br />
+
+<h2>Ticket Lifecycle Scenarios</h2>
+
+<br />
+<br />
+
+Scenario 1 — Online Banking System Down
+
+Karen's (End‑User) Ticket:  
+“The entire mobile/online banking system is down.”
+
+<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/97de0d4f-a906-42c1-88f2-db5d55e5b0c9" />
+
+
+Agent (John) Observes Properties:
+- Priority
+- Department
+- SLA
+- Assigned To
+
+Triage the Ticket, updating properties based on the Ticket severity 
+Updated Properties: 
+- SLA: Sev‑A (1 hour, 24/7)
+- Department: Online Banking
+
+<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/0f277fb6-7f52-44a3-8693-5aeb6dacd539" />
+
+
+Result:  
+John loses access due to department restrictions.
+
+<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/090eade6-8e9f-4156-ad2c-6f0e98b0dce3" />
+
+Jane (SysAdmins) completes the ticket.
+
+
+<img width="1030" height="768" alt="image" src="https://github.com/user-attachments/assets/effd3387-e900-44be-9564-0645b622fb69" />
+
+<br />
+<br />
+
+Scenario 2 — Adobe Upgrade Needed
+
+Ken's (End‑User) Ticket:  
+“Accounting department needs an Adobe upgrade, broken”
+
+<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/97de0d4f-a906-42c1-88f2-db5d55e5b0c9" />
+
+
+Agent (John) Observes Properties:
+- Priority
+- Department
+- SLA
+- Assigned To
+
+Triage the Ticket, updating properties based on the Ticket severity 
+Updated Properties: 
+- SLA: Sev‑A (1 hour, 24/7)
+- Department: Online Banking
+
+<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/0f277fb6-7f52-44a3-8693-5aeb6dacd539" />
+
+
+Result:  
+John loses access due to department restrictions.
+
+<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/090eade6-8e9f-4156-ad2c-6f0e98b0dce3" />
+
+Jane (SysAdmins) completes the ticket.
+
+
+<img width="1030" height="768" alt="image" src="https://github.com/user-attachments/assets/effd3387-e900-44be-9564-0645b622fb69" />
+
+<br />
+<br />
+
+
