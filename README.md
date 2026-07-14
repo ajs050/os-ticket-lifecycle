@@ -68,85 +68,108 @@ Configuring a role of "Supreme Admin" that will have all permissions.
 
 Step 3: Configure Departments
 
-Adding a  
+Adding a Department for SysAdmins. Admin Panel → Agents → Departments
 
-- Open IIS as Administrator.
-- Register PHP in IIS via PHP Manager → C:\PHP\php‑cgi.exe.
-- Reload IIS (Stop and Start the server).
+- Parent Department: Top‑Level Department
+- Name: SysAdmins
+- Departments control ticket visibility and assignment.
   
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/660e107b-d915-47c0-925d-190586a64c0e" />
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/de4dd50c-dfc2-4819-9180-2feb89fa7691" />
 
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/b2f574f3-94d5-4f19-87cb-c0abe1499ac7" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/9ac0f390-aac7-4eeb-8496-b2ea035350c2" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/03bf5b9d-2900-43bf-9650-389d7f70b402" />
 
   
 <br />
 <br />
 
 
-Step 4: Install osTicket
+Step 4: Configure Teams
 
+Adding an Online Banking Team, consisting of people from different departments. 
 
-After we unzip osTicket‑v1.15.8.zip from the osTicket‑Installation‑Files folder, we will: 
-
-- Copy the upload folder into C:\inetpub\wwwroot.
-- Rename upload to osTicket.
-- Reload IIS (Stop and Start the server).
-- Browse to http://localhost/osTicket to confirm the installation page loads.
+- Admin Panel → Agents → Teams
+- Create team: Online Banking
+- Teams allow agents from different departments to collaborate.
   
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/026325db-c27e-41e7-8195-bfe763b12ef2" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/1a8c284c-aedb-4084-baae-542f95f67ba6" />
-
-<img width="1708" height="880" alt="image" src="https://github.com/user-attachments/assets/90d603e4-e6ca-4a70-b804-cba4218eaff3" />
-
-
-<img width="1708" height="1070" alt="image" src="https://github.com/user-attachments/assets/429d6f9d-8c1e-4b06-b05c-2d776cd38786" />
-
-
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/ff2f00dc-c789-496c-981b-c49968220116" />
 
 
 <br />
 <br />
 
 
-Step 5: Post‑Installation Setup
+Step 5: Configure User Settings
 
-We're not finished just yet! Just a few last configurations left. 
+Configuring user settings to simulate an environment where an unregistered user can create a ticket.
 
 
-- Enable Required PHP Extensions in IIS: IIS → Sites → Default → osTicket. Double‑click PHP Manager.
-- Click “Enable or disable an extension”. Enable php_imap.dll, php_intl.dll, and php_opcache.dll. Refresh the osTicket website afterwards to make sure changes went through.
-- Rename Configuration File (From: C:\inetpub\wwwroot\osTicket\include\ost‑sampleconfig.php To: C:\inetpub\wwwroot\osTicket\include\ost‑config.php)
-- Assign Permissions within the ost‑config.php file. Right-click → Properties → Security → Advanced. Disable inheritance → Remove All. Then, Add → Select a principal → Enter Everyone → Check Names → OK → Full Control
-- Continue Setup in OsTicket Browser
-- Install HeidiSQL from the osTicket‑Installation‑Files folder. Open HeidiSQL → Create new session, provide credentials from earlier installation → Right‑click Unnamed → Create New Database → Name: osTicket
-- Provide the last details for the database settings, then hit install!!
+- Admin Panel → Settings → User Settings
+- UNCHECK: “Require registration and login to create tickets ”
   
-<img width="1708" height="797" alt="image" src="https://github.com/user-attachments/assets/6b2cc219-111a-4444-a497-16e94590b60d" />
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/e4b111c8-cd16-43dd-92aa-2dab3dcfc292" />
 
-
-<img width="1708" height="961" alt="image" src="https://github.com/user-attachments/assets/99759263-ba0f-4706-bb38-2604867d6da8" />
-
-
-<img width="1708" height="776" alt="image" src="https://github.com/user-attachments/assets/0aa67a35-7b0c-459b-a6ac-187af793fd49" />
-
-
-
-<img width="1708" height="863" alt="image" src="https://github.com/user-attachments/assets/73cb270f-7100-40ca-8f3a-ef43d53a621c" />
-
-<img width="1708" height="863" alt="image" src="https://github.com/user-attachments/assets/ffad7c65-b0e1-433c-8c6c-7b60e2f5d6cb" />
-
-<img width="1708" height="863" alt="image" src="https://github.com/user-attachments/assets/edb19baf-6096-4fd6-a1dc-14e0158e4dd8" />
-
-<img width="1708" height="863" alt="image" src="https://github.com/user-attachments/assets/55942a21-cdbe-4432-a495-89c4f770c5ce" />
 
 <br />
 <br />
 
-After this, osTicket will be installed and accessed at last for both admins and users. 🎉 🎊
 
-<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/edc8ce54-bd18-482b-af29-2617844152ea" />
+Step 6: Configure Agents (Help Desk Workers)
+
+Creating our actual Help Desk Workers involved in this simulation. 
+
+- Admin Panel → Agents → Add New
+- Agents represent internal IT staff.
+- Jane: SysAdmins	department, Supreme Admin Role, Online Banking Team
+- John: Support department, View Only
+  
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/f8383fe6-5db8-4ea2-b01b-a86b7a33a0e2" />
+
+
+<br />
+<br />
+
+Step 7: Configure Users (Customers)
+
+These simulate end‑users submitting tickets.
+
+- Agent Panel → Users → Add New
+- Karen & Ken
+  
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/0c2902e5-704f-4a2b-b300-74fb076fd1db" />
+
+
+
+<br />
+<br />
+
+Step 8: Configure SLAs (Service Level Agreements)
+
+Creating SLA which are used as target goals you have to meet as a help desk worker. Promise between the team and user, how quickly you assign a ticket, reach out to the user, communicate with the user, etc
+ 
+
+- Sev-A: Grace Period of 1 Hour, in a 24/7 schedule 
+- Sev-B: Grace Period of 4 hours, in a 24/7 schedule 
+- Sev-C: Grace Period of 8 Hours, during regular Business Hours
+- SLAs define urgency and response expectations.
+  
+<img width="1708" height="935" alt="image" src="https://github.com/user-attachments/assets/73e2f407-e285-49b9-9acc-52d6c5fe4c20" />
+
+
+<br />
+<br />
+
+Step 9: Configure Help Topics
+
+Creating Help Desk Topics that categorize the incoming tickets. 
+ 
+
+- Admin Panel → Manage → Help Topics: 
+- Business Critical Outage
+- Personal Computer Issues
+- Equipment Request
+- Password Reset
+- Other
+  
+<img width="1708" height="860" alt="image" src="https://github.com/user-attachments/assets/cdaa382d-575b-4f14-91d3-d01ca90c34e7" />
+
+<br />
+<br />
