@@ -13,15 +13,11 @@ This lab builds on the completed installation from the [osTicket: Prerequisites 
 
 <h2>🖥️ Environments and Technologies Used</h2>
 
-Gain hands‑on experience with:
-
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Windows 11 (4 vCPUs)
 - osTicket v1.15.8
 - Web Browser (Admin Panel & Agent Panel)
-- Gemini Ai
-
 
 <h2>🎯 Purpose</h2>
 
@@ -206,7 +202,7 @@ John loses access due to department restrictions.
 
 <img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/090eade6-8e9f-4156-ad2c-6f0e98b0dce3" />
 
-Jane (SysAdmins) completes the ticket.
+Jane completes the ticket, verifying with Karen afterwards and documenting each step!
 
 
 <img width="1030" height="768" alt="image" src="https://github.com/user-attachments/assets/effd3387-e900-44be-9564-0645b622fb69" />
@@ -217,36 +213,28 @@ Jane (SysAdmins) completes the ticket.
 Scenario 2 — Adobe Upgrade Needed
 
 Ken's (End‑User) Ticket:  
-“Accounting department needs an Adobe upgrade, broken”
+“Some people in the Accounting department can't use Adobe Reader”
 
-<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/97de0d4f-a906-42c1-88f2-db5d55e5b0c9" />
+<img width="1030" height="768" alt="image" src="https://github.com/user-attachments/assets/a4649838-100b-4b65-9a8e-7b26bdfeacad" />
 
 
-Agent (John) Observes Properties:
-- Priority
-- Department
-- SLA
-- Assigned To
+Agent (John) observes and sets appropriate Properties:
+- SLA: Sev‑B (4 hours, 24/7)
+- Priority: High
 
-Triage the Ticket, updating properties based on the Ticket severity 
-Updated Properties: 
-- SLA: Sev‑A (1 hour, 24/7)
-- Department: Online Banking
-
-<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/0f277fb6-7f52-44a3-8693-5aeb6dacd539" />
+<img width="1030" height="768" alt="image" src="https://github.com/user-attachments/assets/798f7641-6b21-4f4e-b6d9-e5e1da7b6059" />
 
 
 Result:  
-John loses access due to department restrictions.
+John resolves the ticket by going through the software catalog, verifying with the accounting department to make sure the computers can use Adobe once more!
 
-<img width="1033" height="780" alt="image" src="https://github.com/user-attachments/assets/090eade6-8e9f-4156-ad2c-6f0e98b0dce3" />
+<img width="1034" height="770" alt="image" src="https://github.com/user-attachments/assets/35f6a154-b22c-4be5-819c-b75bb46f3bb1" />
 
-Jane (SysAdmins) completes the ticket.
-
-
-<img width="1030" height="768" alt="image" src="https://github.com/user-attachments/assets/effd3387-e900-44be-9564-0645b622fb69" />
 
 <br />
 <br />
+
+<h2>That's the end of the lab! Thank you for making it to the end! 🎊 </h2>
+
 
 
